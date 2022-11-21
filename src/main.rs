@@ -46,7 +46,8 @@ async fn main() {
         device,
         Protocol::AndroidWatch.into(),
         engine::Engine::default()
-            .register_module(handler::LoggingHandler),
+            .register_module(handler::LoggingHandler)
+            .register_module(handler::EchoHandler),
     ));
 
     let handle = tokio::spawn({
