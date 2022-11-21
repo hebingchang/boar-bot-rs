@@ -1,0 +1,10 @@
+/target
+qrcode.png
+device.json
+session.token
+
+/src/handler/*
+!/src/handler/mod.rs
+!/src/handler/logger.rs
+
+/.idea
